@@ -1,0 +1,12 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Email:</b>
+  <%= @user.email %>
+</p>
+
+<%= link_to 'Json file:', @user.json.url %>
+<%= link_to 'sound file', @user.sound.url %>
+
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Back', users_path %>
